@@ -16,6 +16,8 @@ node_modules/
 # Misc
 .DS_Store
 *.pem
+Thumbs.db
+desktop.ini
 
 # Debug
 npm-debug.log*
@@ -24,20 +26,17 @@ yarn-error.log*
 
 # Local env files
 .env*.local
-.env
 
 # Vercel
 .vercel
 
-# Typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-# OS
-Thumbs.db
-desktop.ini
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
