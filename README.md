@@ -1,8 +1,8 @@
-# 🔢 Sorting Visualizer (Next.js)
+# Sorting Visualizer (Next.js)
 
 An interactive web application built with **Next.js** and **React** that visualizes four classic sorting algorithms with real-time metrics and beautiful animations.
 
-## ✨ Features
+## Features
 
 - **Visual Animations**: Watch sorting algorithms in action with smooth animations
 - **Real-time Metrics**: Track comparisons, swaps, and complexity in real-time
@@ -12,7 +12,7 @@ An interactive web application built with **Next.js** and **React** that visuali
 - **Custom Data Input**: Load your own data or use default/random data
 - **Built with Next.js**: Fast, optimized, and production-ready
 
-## 🚀 Algorithms Included
+## Algorithms Included
 
 ### 1. Selection Sort
 - **Time Complexity**: O(n²)
@@ -34,7 +34,7 @@ An interactive web application built with **Next.js** and **React** that visuali
 - **Space Complexity**: O(n)
 - Divides array, sorts recursively, then merges
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Install dependencies
@@ -52,7 +52,7 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🌐 Deploy to Vercel
+## Deploy to Vercel
 
 ### Option 1: Deploy from GitHub
 
@@ -90,7 +90,7 @@ vercel --prod
 
 Once connected to GitHub, Vercel will automatically deploy every time you push changes!
 
-## 📖 Usage
+## Usage
 
 1. **Select Algorithm**: Choose from the dropdown menu
 2. **Adjust Speed**: Use the slider to control animation speed (1-100%)
@@ -101,7 +101,7 @@ Once connected to GitHub, Vercel will automatically deploy every time you push c
 4. **Start Sort**: Click "Sort" to begin visualization
 5. **Reset**: Return to current dataset
 
-## 🎨 Color Legend
+## Color Legend
 
 - **Blue**: Unsorted elements
 - **Yellow/Orange**: Elements being compared
@@ -109,14 +109,14 @@ Once connected to GitHub, Vercel will automatically deploy every time you push c
 - **Green**: Sorted elements
 - **Purple**: Current element in focus
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Next.js 14** - React framework
 - **React 18** - UI library
 - **CSS Modules** - Scoped styling
 - **JavaScript (ES6+)** - Logic and algorithms
 
-## 📱 Browser Compatibility
+## Browser Compatibility
 
 Works on all modern browsers:
 - Chrome/Edge (recommended)
@@ -124,7 +124,7 @@ Works on all modern browsers:
 - Safari
 - Opera
 
-## 🔧 Project Structure
+## Project Structure
 
 ```
 sorting-visualizer/
@@ -139,19 +139,19 @@ sorting-visualizer/
 └── README.md
 ```
 
-## 🎯 Environment Variables
+## Environment Variables
 
 No environment variables needed! This app works out of the box.
 
-## 📄 License
+## License
 
 MIT License - feel free to use this project for learning and teaching!
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests.
 
-## 🌟 Features Coming Soon
+## Features Coming Soon
 
 - More sorting algorithms (Quick Sort, Heap Sort)
 - Sound effects
