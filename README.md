@@ -1,15 +1,16 @@
 # 🔢 Sorting Algorithm Visualizer
 
-An interactive web application that visualizes four classic sorting algorithms with real-time metrics and beautiful animations.
+An interactive web application built with **Next.js** that visualizes four classic sorting algorithms with real-time metrics and beautiful animations.
 
 ## Features
 
-- ✨ **Visual Animations**: Watch sorting algorithms in action with smooth animations
-- 📊 **Real-time Metrics**: Track comparisons, swaps, and complexity in real-time
-- 🎯 **Four Algorithms**: Selection, Insertion, Bubble, and Merge Sort
-- 🎨 **Modern UI**: Beautiful dark-themed interface with gradient effects
-- ⚡ **Adjustable Speed**: Control animation speed with slider
-- 🔄 **Interactive Controls**: Reset, randomize, and sort with ease
+- **Visual Animations**: Watch sorting algorithms in action with smooth animations
+- **Real-time Metrics**: Track comparisons, swaps, and complexity in real-time
+- **Four Algorithms**: Selection, Insertion, Bubble, and Merge Sort
+- **Custom Data Input**: Enter your own data or use the default dataset
+- **Modern UI**: Beautiful dark-themed interface with gradient effects
+- **Adjustable Speed**: Control animation speed with slider
+- **Built with Next.js**: Optimized for Vercel deployment
 
 ## Algorithms Included
 
@@ -40,11 +41,49 @@ The visualizer starts with the following dataset:
 56, 90, 67, 34, 22, 88, 71, 9, 38, 40
 ```
 
-## Deployment to Vercel
+## 🚀 Getting Started
 
-### Quick Deploy
+### Prerequisites
 
-1. Install Vercel CLI (if not already installed):
+- Node.js 18.0 or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/YOUR-USERNAME/sorting-visualizer.git
+cd sorting-visualizer
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 📦 Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 🌐 Deploy to Vercel
+
+### Option 1: Deploy via Vercel CLI
+
+1. Install Vercel CLI:
 ```bash
 npm install -g vercel
 ```
@@ -54,61 +93,118 @@ npm install -g vercel
 vercel login
 ```
 
-3. Deploy the project:
+3. Deploy:
 ```bash
 vercel
 ```
 
-4. For production deployment:
+4. For production:
 ```bash
 vercel --prod
 ```
 
-### Deploy via Vercel Dashboard
+### Option 2: Deploy via GitHub (Recommended)
 
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Click "Import Project"
-4. Select your repository
-5. Click "Deploy"
-
-That's it! Your sorting visualizer will be live.
-
-## Local Development
-
-To run locally, simply open `index.html` in a web browser, or use a local server:
-
+1. Push your code to GitHub:
 ```bash
-# Using Python
-python -m http.server 8000
-
-# Then visit http://localhost:8000
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR-USERNAME/sorting-visualizer.git
+git branch -M main
+git push -u origin main
 ```
 
-## Usage
+2. Go to [vercel.com](https://vercel.com)
+3. Click **"Import Project"**
+4. Select your GitHub repository
+5. Click **"Deploy"**
 
-1. **Select Algorithm**: Choose from the dropdown menu
-2. **Adjust Speed**: Use the slider to control animation speed
-3. **Start Sort**: Click "Start Sort" to begin visualization
-4. **Reset**: Return to original data
-5. **Randomize**: Generate a new random array
+That's it! Vercel will automatically:
+- Detect it's a Next.js project
+- Build and deploy
+- Set up automatic deployments for future pushes
 
-## Color Legend
+### Option 3: One-Click Deploy
 
-- 🔵 **Blue**: Unsorted elements
-- 🟡 **Yellow/Orange**: Elements being compared
-- 🔴 **Red**: Elements being swapped
-- 🟢 **Green**: Sorted elements
-- 🟣 **Purple**: Current element in focus
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR-USERNAME/sorting-visualizer)
 
-## Technologies Used
+## 📖 Usage
 
-- Pure HTML5
-- CSS3 (Gradients, Animations, Flexbox, Grid)
-- Vanilla JavaScript (ES6+)
-- No frameworks or dependencies required!
+1. **Select Algorithm**: Choose from the dropdown menu (Selection, Insertion, Bubble, or Merge Sort)
+2. **Adjust Speed**: Use the slider to control animation speed (1% - 100%)
+3. **Load Data**:
+   - Click **"Load Default"** for the original dataset
+   - Enter custom numbers in the input field and click **"Load Custom"**
+   - Click **"Random"** for random data
+4. **Start Sort**: Click "Sort" to begin visualization
+5. **Reset**: Return to the last loaded data
 
-## Browser Compatibility
+### Custom Data Format
+
+Enter numbers separated by commas or spaces:
+- `25, 10, 80, 45, 60, 15, 95`
+- `100 50 75 25 90 10`
+- Maximum 20 values
+
+## 🎨 Color Legend
+
+- **Blue**: Unsorted elements
+- **Yellow/Orange**: Elements being compared
+- **Red**: Elements being swapped
+- **Green**: Sorted elements
+- **Purple**: Current element in focus
+
+## 🛠️ Technologies Used
+
+- **Next.js 14** - React framework for production
+- **React 18** - UI library
+- **CSS Modules** - Scoped styling
+- **Vercel** - Deployment platform
+
+## 📁 Project Structure
+
+```
+sorting-visualizer/
+├── app/
+│   ├── layout.js          # Root layout
+│   ├── page.js            # Main page with sorting logic
+│   ├── page.module.css    # Scoped styles
+│   └── globals.css        # Global styles
+├── public/                # Static assets
+├── next.config.js         # Next.js configuration
+├── package.json           # Dependencies
+├── jsconfig.json          # JavaScript config
+└── README.md             # Documentation
+```
+
+## 🌟 Features Highlights
+
+- ✅ Client-side rendering for smooth animations
+- ✅ React hooks for state management
+- ✅ CSS Modules for scoped styling
+- ✅ Responsive design (mobile-friendly)
+- ✅ Optimized for Vercel deployment
+- ✅ No external dependencies (pure React/Next.js)
+- ✅ Fast refresh during development
+
+## 🔧 Development
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run linting
+npm run lint
+```
+
+## 📱 Browser Compatibility
 
 Works on all modern browsers:
 - Chrome/Edge (recommended)
@@ -116,11 +212,20 @@ Works on all modern browsers:
 - Safari
 - Opera
 
-## License
+## 📄 License
 
 MIT License - feel free to use this project for learning and teaching!
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests.
 
+## 👨‍💻 Author
+
+Built with ❤️ using Next.js
+
+---
+
+**Live Demo**: [Deploy to see your live URL]
+
+**Vercel Deployment Status**: Automatic deployments on every push to main branch
