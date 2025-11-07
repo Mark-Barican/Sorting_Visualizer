@@ -1,4 +1,4 @@
-# 🔢 Sorting Algorithm Visualizer
+# Sorting Algorithm Visualizer
 
 An interactive web application that visualizes four classic sorting algorithms with real-time metrics and beautiful animations.
 
