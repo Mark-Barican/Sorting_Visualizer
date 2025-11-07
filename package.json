@@ -1,0 +1,19 @@
+{
+  "name": "sorting-visualizer",
+  "version": "1.0.0",
+  "description": "Interactive sorting algorithm visualizer with metrics and animations",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "sorting",
+    "algorithms",
+    "visualization",
+    "educational"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
