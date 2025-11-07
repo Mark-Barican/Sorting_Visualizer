@@ -4,12 +4,12 @@ An interactive web application that visualizes four classic sorting algorithms w
 
 ## Features
 
-- ✨ **Visual Animations**: Watch sorting algorithms in action with smooth animations
-- 📊 **Real-time Metrics**: Track comparisons, swaps, and complexity in real-time
-- 🎯 **Four Algorithms**: Selection, Insertion, Bubble, and Merge Sort
-- 🎨 **Modern UI**: Beautiful dark-themed interface with gradient effects
-- ⚡ **Adjustable Speed**: Control animation speed with slider
-- 🔄 **Interactive Controls**: Reset, randomize, and sort with ease
+- **Visual Animations**: Watch sorting algorithms in action with smooth animations
+- **Real-time Metrics**: Track comparisons, swaps, and complexity in real-time
+- **Four Algorithms**: Selection, Insertion, Bubble, and Merge Sort
+- **Modern UI**: Beautiful dark-themed interface with gradient effects
+- **Adjustable Speed**: Control animation speed with slider
+- **Interactive Controls**: Reset, randomize, and sort with ease
 
 ## Algorithms Included
 
@@ -95,11 +95,11 @@ python -m http.server 8000
 
 ## Color Legend
 
-- 🔵 **Blue**: Unsorted elements
-- 🟡 **Yellow/Orange**: Elements being compared
-- 🔴 **Red**: Elements being swapped
-- 🟢 **Green**: Sorted elements
-- 🟣 **Purple**: Current element in focus
+- **Blue**: Unsorted elements
+- **Yellow/Orange**: Elements being compared
+- **Red**: Elements being swapped
+- **Green**: Sorted elements
+- **Purple**: Current element in focus
 
 ## Technologies Used
 
